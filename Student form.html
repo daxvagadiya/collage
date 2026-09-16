@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ragistration form</title>
+</head>
+<body>
+    <h2>Student Ragistration Form</h2>
+    <form  method="get">
+        <!-- personal information -->
+        <!-- form ma action add kari sakiye for any specific file ma-->
+        <fieldset>
+            <legend>Information</legend>
+            <label for="Name">Username:</label>
+            <input type="text" name="username" id="uname" autofocus autocomplete="on" placeholder="Enter Username" required maxlength="10">
+            
+            <!--autofocus ma autometic cuesor lay lye
+            autocompleate ma ak vae password nakhya pachi biji jarur na pade
+            placeholder ma low intencity thi enter user name lakhva mate
+            required ma tamare kaik to lakhvu pade baki na hale maxlength ma length set kari sako  -->
+            <br><br>
+            <label for="Password">Password:</label>
+            <input type="Password" name="Pwd" id="Pwd" placeholder="Enter Your Password" required minlength="6">
+            <br><br>
+            <label for="E-mail">E-mail:</label>
+            <input type="Email" name="Email" id="Email" placeholder="Enter Your abc@gmial.com" required>
+            <br><br>
+            <label for="Phone">Phone:</label>
+            <input type="tel" name="Phone" id="Phone" placeholder="1234567890" required>
+            <br><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" value="Male" checked>Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Other">Other
+            <br><br>
+            <label for="DOB"> DOB:</label>
+            <input type="date" name="DOB" id="DOB" min="2025-09-07" max="2025-12-31">
+            <br><br>
+            <label for="Hobbies">Hobbies:</label>
+            <input type="checkbox" name="Hobby" value="music"checked>music
+            <input type="checkbox" name="sport" value="sport"checked>sport
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="1" max="50" value="18">
+            <br><br>
+            <label>Favorite Color:</label>
+            <input type="color" name="Favorite color" id="Favorite color" value="pink">
+            <br><br>
+            <label>Prefffered Browser</label>
+            <input list="browsers" name="browsers" id="browser">
+                <datalist id="browsers">
+                    <option value="Crome">
+                    <option value="FireBox">
+                    <option value="Edge">
+                </datalist>
+            <br><br>
+            <label> Select Branch</label>
+            <select name="degree_brench" id="degree">
+                <option value="select" selected disabled>select Branch</option>
+                <optgroup label="Computer">
+                    <option value="CSE">CSE</option>
+                    <option value="CSE-DS">CSE-DS</option>
+                    <option value="CEA">CEA</option>
+                    <option value="CE">CE</option>
+                    <option value="IT">IT</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="EC">EC</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="MECH.">MECH.</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label>Your massage</label>
+            <textarea name="message" id="msg" rows="5" cols="30">Enter Your Massage</textarea>
+            <br><br>
+            <label>Satsfaction lavel:</label>
+            <input type="range" name="satisfaction" id="range" min="0" max="50" step="5" value="25">
+            <br><br>
+            <input type="hidden" name="userid" value="1234">
+            <br><br>
+            <label >Upload resume</label>.
+            <input type="file" name="resume" id="resume" accept=".pdf,.dx" multiple>
+            <br><br>
+            <input type="button" value="submit"> 
+            <br><br>
+            <input type="reset" value="Reset Form">
+            <br><br>
+            <button type="Submit">Submit Button</button>
+            
+        </fieldset>
+    </form>
+
+</body>
+</html>
